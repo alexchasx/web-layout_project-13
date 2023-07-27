@@ -1,0 +1,66 @@
+.footer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: var(--color-hash);
+  color: var(--color-grey-light);
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo-text {
+    margin-right: 204px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__text {
+    margin-right: auto;
+    padding: 24px 0 16px;
+    width: 361px;
+  }
+
+  &__social {
+    text-align: center;
+
+    .social {
+      &__link {
+        outline: none;
+        display: inline-block;
+        fill: var(--color-grey-light);
+        -webkit-transition: fill 0.3s linear, outline 0.3s linear;
+        -o-transition: fill 0.3s linear, outline 0.3s linear;
+        transition: fill 0.3s linear, outline 0.3s linear;
+      }
+
+      &__link:focus {
+        fill: var(--color-yellow);
+      }
+
+      &__link:hover {
+        fill: var(--color-yellow-light);
+      }
+
+      &__link:active {
+        fill: var(--color-yellow-dark);
+        outline: none;
+      }
+    }
+  }
+
+  &__social-text {
+    margin-bottom: 8px;
+    padding-top: 10px;
+  }
+
+  &__svg {
+    margin-right: 7px;
+    margin-left: 8px;
+    width: 30px;
+    height: 30px;
+  }
+}

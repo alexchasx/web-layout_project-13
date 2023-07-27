@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/projects';
+@import './components/contacts';
+@import './components/footer';
+
+@import 'media/_desktop';
+@import 'media/_tablet';
+@import 'media/_mobile';

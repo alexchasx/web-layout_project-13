@@ -1,0 +1,126 @@
+.projects {
+  margin-bottom: 69px;
+  color: var(--color-hash);
+
+  img {
+    background-color: var(--color-grey);
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 190px) repeat(2, 300px);
+    grid-auto-rows: 300px;
+    grid-gap: 30px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    grid-column: 12 span;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--color-hash);
+  }
+
+  .card {
+    position: relative;
+
+    &__image-wrap {
+      position: relative;
+      width: 100%;
+    }
+
+    .hash-tag {
+      top: 7px;
+      right: 7px;
+      padding: 6px 14px;
+    }
+
+    &__image {
+      margin-bottom: 14px;
+    }
+
+    &__descr {
+      margin-bottom: 9px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+
+      @include crop-text(3);
+    }
+
+    &__date {
+      padding-left: 19px;
+      background-image: url('../img/calendar.svg');
+      background-position: left;
+      background-repeat: no-repeat;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+      color: var(--color-grey);
+    }
+
+    &--big {
+      &--1 {
+        grid-column: 2 span;
+      }
+
+      &--2 {
+        grid-column: 3 span;
+      }
+
+      .card {
+        &__content {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 37px;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          max-width: 325px;
+          padding: 22px 0 35px 30px;
+          color: var(--color-light);
+        }
+
+        &__title {
+          margin-top: 2px;
+          margin-bottom: 6px;
+          font-family: var(--second-family);
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 24px;
+
+          @include crop-text(4);
+        }
+
+        &__date {
+          background-image: url('../img/calendar-white.svg');
+          color: inherit;
+        }
+
+        &__btn {
+          position: absolute;
+          bottom: 30px;
+          left: 30px;
+          background-color: transparent;
+
+          &.focus-visible {
+            border-color: var(--color-yellow-light);
+            background-color: var(--color-yellow);
+          }
+
+          @include hover {
+            border-color: var(--color-yellow-light);
+            background-color: var(--color-yellow-light);
+          }
+
+          &:active {
+            border-color: var(--color-yellow-dark);
+            background-color: var(--color-yellow-dark);
+          }
+        }
+      }
+    }
+  }
+}

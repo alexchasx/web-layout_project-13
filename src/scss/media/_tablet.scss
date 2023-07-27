@@ -1,0 +1,192 @@
+@media (max-width: (1023px)) {
+  .container {
+    padding: 0 27px;
+    max-width: 768px;
+  }
+
+  .address {
+    &__tel {
+      left: 29px;
+    }
+  }
+
+  .header {
+    margin-bottom: 81px;
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        margin-right: auto;
+      }
+
+      .nav {
+        position: absolute;
+        top: 80px;
+        right: -129px;
+        bottom: -45px;
+        left: -129px;
+        background-color: var(--color-grey-dark);
+
+        &__list {
+          margin: 0 auto;
+          margin-top: 12px;
+          padding-left: 30px;
+          padding-right: 30px;
+          width: 783px;
+        }
+      }
+
+      .search {
+        right: 56px;
+      }
+    }
+  }
+
+  .hero {
+    .grid {
+      grid-template-rows: auto 228px 133px;
+    }
+
+    &__left {
+      background-image: url('../img/hero-1-342w.jpg');
+      background-image: -webkit-image-set(
+        url('../img/hero-1-342w.webp') type('image/webp'),
+        url('../img/hero-1-342w.jpg') type('image/jpeg')
+      );
+      background-image: image-set(
+        url('../img/hero-1-342w.webp') type('image/webp'),
+        url('../img/hero-1-342w.jpg') type('image/jpeg')
+      );
+    }
+
+    &__descr {
+      margin-bottom: 17px;
+    }
+
+    &__title {
+      margin-top: -2px;
+      margin-bottom: 23px;
+      margin-left: -2px;
+      line-height: 90%;
+    }
+
+    .works {
+      padding-left: 27px;
+      padding-right: 27px;
+
+      &__title {
+        margin-top: -2px;
+        margin-bottom: -13px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .about {
+    padding-bottom: 62px;
+
+    .grid {
+      grid-template-rows: 569px 1fr;
+    }
+
+    &__image {
+      height: 569px;
+      background-image: url('../img/about-342w.jpg');
+      background-image: -webkit-image-set(
+        url('../img/about-342w.webp') type('image/webp'),
+        url('../img/about-342w.jpg') type('image/jpeg')
+      );
+      background-image: image-set(
+        url('../img/about-342w.webp') type('image/webp'),
+        url('../img/about-342w.jpg') type('image/jpeg')
+      );
+    }
+
+    .subscribe {
+      &__input {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .projects {
+    .grid {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(2, 300px) 314px 300px;
+    }
+
+    .card {
+      &--big {
+        &--1 {
+          .card__btn {
+            bottom: 29px;
+          }
+        }
+      }
+
+      &--1,
+      &--2 {
+        .card__descr {
+          -webkit-line-clamp: 3;
+        }
+      }
+
+      &--3 {
+        grid-column: 2 span;
+      }
+
+      &--4,
+      &--7 {
+        grid-column: 6 span;
+      }
+
+      &--5,
+      &--6 {
+        margin-top: 7px;
+      }
+
+      &--1,
+      &--2,
+      &--3 {
+        .card__descr {
+          margin-bottom: 9px;
+        }
+      }
+    }
+  }
+
+  .contacts {
+    .grid {
+      display: block;
+    }
+
+    &__map {
+      margin-bottom: 30px;
+    }
+
+    &__address {
+      padding-right: 268px;
+    }
+
+    &__form {
+      width: 466px;
+    }
+  }
+
+  .footer {
+    &__logo-text {
+      margin-bottom: -4px;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__social {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}

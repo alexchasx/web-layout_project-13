@@ -1,0 +1,62 @@
+<header class="header">
+  <div class="container header__container">
+    @include('logo.html')
+
+    <div class="burger-wrap">
+      <button class="btn-reset burger" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <nav class="nav header__nav" title="Главное меню">
+      <button class="btn-reset nav__close" aria-label="Закрыть меню"></button>
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">О&nbsp;студии</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Наши проекты</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Услуги</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Мастер-классы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+      <address class="nav__address address">
+        <a class="address__tel" href="tel:+749542423532"
+          >+7&nbsp;495 424-23-532</a
+        >
+      </address>
+    </nav>
+    <button class="btn-reset button-search" aria-label="Найти">
+      <picture>
+        <source
+          srcset="img/search.svg"
+          media="(max-width: 767px)"
+          width="20"
+          height="20"
+        />
+        <img src="img/search.svg" alt="Поиск" width="25" height="25" />
+      </picture>
+    </button>
+    <div class="header__search search">
+      <input
+        class="search__input form-field"
+        type="search"
+        id="search"
+        name="q"
+        placeholder="Что будем искать?"
+      />
+      <button
+        class="btn-reset search__close"
+        aria-label="Закрыть поиск"
+      ></button>
+    </div>
+  </div>
+</header>

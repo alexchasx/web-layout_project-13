@@ -1,0 +1,24 @@
+:root {
+  // base
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'TT Firs Neue', sans-serif;
+  --content-width: 1290px;
+  --container-offset: 31px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-light: #fff;
+  --color-yellow-light: #ff6e30;
+  --color-yellow: #bc572b;
+  --color-yellow-dark: #ce4307;
+  --color-red-light: #f06666;
+  --color-bg-input: #e9e9e9;
+  --color-grey-light: #cacaca;
+  --color-grey: #999;
+  --color-grey-dark: #4a4a4a;
+  --color-hash: #202020;
+  --color-address: rgba(32, 32, 32, 0.85);
+  --color-dark: #000;
+
+  --color-debug: rgba(51, 51, 51, 0.3);
+}
